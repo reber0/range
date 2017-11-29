@@ -1,1 +1,0 @@
-GIF89a<?php echo "aaa"; ?>
