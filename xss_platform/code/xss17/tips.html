@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，同样这里是添加链接的
+    用户post一个url，然后会把url添加到当前页面
+
+    这里对单双引号进行了替换，替换为了对应的实体编码
+    然后判断了用户提交的url中是否含有http://
+    用来验证提交的是否为url
+
+    这里可以用 javascript:alert(1)//http://
+    因为javascript中，//是代表注释的意思
+    这样数据中含有http://还不影响弹窗
+    </xmp>
+</body>
+</html>

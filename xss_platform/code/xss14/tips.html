@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，这里直接接收keyword参数，然后变为小写
+    之后使用了循环过滤了script，然后过滤了圆括号，之后又过滤了空格
+    
+    可以使用"><img/src='1'/onerror=alert`0`><"
+    或者"><<svg/onload=alert`1`><"
+    有时候用斜杠是可以代替空格的
+    </xmp>
+</body>
+</html>

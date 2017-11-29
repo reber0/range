@@ -1,0 +1,119 @@
+2017-07-26 17:49:18 连接数据库成功，且选择数据库成功
+2017-07-26 17:49:18 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+2017-07-26 17:49:29 连接数据库成功，且选择数据库成功
+2017-07-26 17:49:29 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+2017-07-26 17:49:34 连接数据库成功，且选择数据库成功
+2017-07-26 17:49:34 mysql_query error:Unknown column 'useragent' in 'field list'
+2017-07-26 17:49:34 受影响行数：-1
+2017-07-26 17:49:38 连接数据库成功，且选择数据库成功
+2017-07-26 17:49:38 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+2017-07-26 17:50:10 连接数据库成功，且选择数据库成功
+2017-07-26 17:50:10 mysql_query error:Unknown column 'useragent' in 'field list'
+2017-07-26 17:50:10 受影响行数：-1
+2017-07-26 17:50:17 连接数据库成功，且选择数据库成功
+2017-07-26 17:50:17 mysql_query error:Unknown column 'useragent' in 'field list'
+2017-07-26 17:50:17 受影响行数：-1
+2017-07-26 17:50:19 连接数据库成功，且选择数据库成功
+2017-07-26 17:50:19 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+2017-07-26 17:50:30 连接数据库成功，且选择数据库成功
+2017-07-26 17:50:30 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+2017-07-26 17:50:42 连接数据库成功，且选择数据库成功
+2017-07-26 17:50:42 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+2017-07-26 17:51:06 连接数据库成功，且选择数据库成功
+2017-07-26 17:51:06 mysql_query error:Unknown column 'useragent' in 'field list'
+2017-07-26 17:51:06 受影响行数：-1
+2017-07-26 17:51:16 连接数据库成功，且选择数据库成功
+2017-07-26 17:51:16 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+2017-07-26 17:59:04 连接数据库成功，且选择数据库成功
+2017-07-26 17:59:04 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+2017-07-26 17:59:08 连接数据库成功，且选择数据库成功
+2017-07-26 17:59:08 执行语句：insert into msg(content,name,useragent) values('222','111','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:52.0) Gecko/20100101 Firefox/52.0') 且执行成功
+2017-07-26 17:59:08 受影响行数：1
+2017-07-26 17:59:08 连接数据库成功，且选择数据库成功
+2017-07-26 17:59:08 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+2017-07-26 17:59:37 连接数据库成功，且选择数据库成功
+2017-07-26 17:59:37 执行语句：insert into msg(content,name,useragent) values('222','111','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:52.0) Gecko/20100101 Firefox/52.0') 且执行成功
+2017-07-26 17:59:37 受影响行数：1
+2017-07-26 17:59:37 连接数据库成功，且选择数据库成功
+2017-07-26 17:59:37 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+2017-07-26 18:02:06 连接数据库成功，且选择数据库成功
+2017-07-26 18:02:06 执行语句：insert into msg(content,name,useragent) values('22','11','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:52.0) Gecko/20100101 Firefox/52.0') 且执行成功
+2017-07-26 18:02:06 受影响行数：1
+2017-07-26 18:02:07 连接数据库成功，且选择数据库成功
+2017-07-26 18:02:07 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+2017-07-26 18:02:18 连接数据库成功，且选择数据库成功
+2017-07-26 18:02:18 执行语句：insert into msg(content,name,useragent) values('22','11','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:52.0) Gecko/20100101 Firefox/52.0') 且执行成功
+2017-07-26 18:02:18 受影响行数：1
+2017-07-26 18:02:18 连接数据库成功，且选择数据库成功
+2017-07-26 18:02:18 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+2017-07-26 18:02:19 连接数据库成功，且选择数据库成功
+2017-07-26 18:02:19 执行语句：insert into msg(content,name,useragent) values('22','11','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:52.0) Gecko/20100101 Firefox/52.0') 且执行成功
+2017-07-26 18:02:19 受影响行数：1
+2017-07-26 18:05:25 连接数据库成功，且选择数据库成功
+2017-07-26 18:05:25 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from msg' at line 1
+2017-07-26 18:06:39 连接数据库成功，且选择数据库成功
+2017-07-26 18:06:39 执行语句：select id,name,content from msg  且执行成功
+2017-07-26 18:06:43 连接数据库成功，且选择数据库成功
+2017-07-26 18:06:43 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id desc' at line 1
+2017-07-26 18:06:59 连接数据库成功，且选择数据库成功
+2017-07-26 18:06:59 执行语句：select id,name,content,useragent from msg  且执行成功
+2017-07-26 18:10:59 连接数据库成功，且选择数据库成功
+2017-07-26 18:10:59 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id=1' at line 1
+2017-07-26 18:10:59 受影响行数：-1
+2017-07-26 18:10:59 连接数据库成功，且选择数据库成功
+2017-07-26 18:10:59 执行语句：select id,name,content,useragent from msg  且执行成功
+2017-07-26 18:11:54 连接数据库成功，且选择数据库成功
+2017-07-26 18:11:54 执行语句：select id,name,content,useragent from msg  且执行成功
+2017-07-26 18:11:55 连接数据库成功，且选择数据库成功
+2017-07-26 18:11:55 执行语句：delete from msg  where id=1 且执行成功
+2017-07-26 18:11:55 受影响行数：1
+2017-07-26 18:11:55 连接数据库成功，且选择数据库成功
+2017-07-26 18:11:55 执行语句：select id,name,content,useragent from msg  且执行成功
+2017-07-26 18:11:57 连接数据库成功，且选择数据库成功
+2017-07-26 18:11:57 执行语句：delete from msg  where id=2 且执行成功
+2017-07-26 18:11:57 受影响行数：1
+2017-07-26 18:11:57 连接数据库成功，且选择数据库成功
+2017-07-26 18:11:57 执行语句：select id,name,content,useragent from msg  且执行成功
+2017-07-26 18:13:22 连接数据库成功，且选择数据库成功
+2017-07-26 18:13:22 执行语句：select id,name,content,useragent from msg  且执行成功
+2017-07-26 18:13:23 连接数据库成功，且选择数据库成功
+2017-07-26 18:13:23 执行语句：delete from msg  where id=3 且执行成功
+2017-07-26 18:13:23 受影响行数：1
+2017-07-26 18:13:23 连接数据库成功，且选择数据库成功
+2017-07-26 18:13:23 执行语句：select id,name,content,useragent from msg  且执行成功
+2017-07-26 18:13:24 连接数据库成功，且选择数据库成功
+2017-07-26 18:13:24 执行语句：delete from msg  where id=4 且执行成功
+2017-07-26 18:13:24 受影响行数：1
+2017-07-26 18:13:24 连接数据库成功，且选择数据库成功
+2017-07-26 18:13:24 执行语句：select id,name,content,useragent from msg  且执行成功
+2017-07-26 18:13:25 连接数据库成功，且选择数据库成功
+2017-07-26 18:13:25 执行语句：delete from msg  where id=5 且执行成功
+2017-07-26 18:13:25 受影响行数：1
+2017-07-26 18:13:25 连接数据库成功，且选择数据库成功
+2017-07-26 18:13:25 执行语句：select id,name,content,useragent from msg  且执行成功
+2017-07-26 18:13:26 连接数据库成功，且选择数据库成功
+2017-07-26 18:13:26 执行语句：delete from msg  where id=6 且执行成功
+2017-07-26 18:13:26 受影响行数：1
+2017-07-26 18:13:26 连接数据库成功，且选择数据库成功
+2017-07-26 18:13:26 执行语句：select id,name,content,useragent from msg  且执行成功
+2017-07-26 18:13:26 连接数据库成功，且选择数据库成功
+2017-07-26 18:13:26 执行语句：delete from msg  where id=7 且执行成功
+2017-07-26 18:13:26 受影响行数：1
+2017-07-26 18:13:27 连接数据库成功，且选择数据库成功
+2017-07-26 18:13:27 执行语句：select id,name,content,useragent from msg  且执行成功
+2017-07-26 18:14:11 连接数据库成功，且选择数据库成功
+2017-07-26 18:14:11 执行语句：select id,name,content from msg  且执行成功
+2017-07-26 18:17:43 连接数据库成功，且选择数据库成功
+2017-07-26 18:17:43 执行语句：select id,name,content from msg  order by 1 desc 且执行成功
+2017-07-26 18:17:47 连接数据库成功，且选择数据库成功
+2017-07-26 18:17:47 执行语句：insert into msg(content,name,useragent) values('22','11','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:52.0) Gecko/20100101 Firefox/52.0') 且执行成功
+2017-07-26 18:17:47 受影响行数：1
+2017-07-26 18:17:48 连接数据库成功，且选择数据库成功
+2017-07-26 18:17:48 执行语句：select id,name,content from msg  order by 1 desc 且执行成功
+2017-07-26 18:17:53 连接数据库成功，且选择数据库成功
+2017-07-26 18:17:53 执行语句：insert into msg(content,name,useragent) values('22','22','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:52.0) Gecko/20100101 Firefox/52.0') 且执行成功
+2017-07-26 18:17:53 受影响行数：1
+2017-07-26 18:17:53 连接数据库成功，且选择数据库成功
+2017-07-26 18:17:53 执行语句：select id,name,content from msg  order by 1 desc 且执行成功
+2017-07-26 18:17:57 连接数据库成功，且选择数据库成功
+2017-07-26 18:17:57 执行语句：select id,name,content from msg  order by 1 desc 且执行成功

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，这里接收keyword参数的同时把值变为小写的了，
+    之后把字符串script替换空，然后输出在input的value值处
+    这里用大写的script已经不能绕过了，但是我们可以看到这里只过滤了一次script这个字符串
+    则payload为："><scriscriptpt>alert(1)</scscriptriPt><" 即可XSS
+    </xmp>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，这是一个上传图片的实验
+    上传图片后图片原来的名字会直接输出出来
+    图片名字也是一个超链接，也即是说名字在href属性中
+
+    这里可以抓包，把文件名字那个地方改为：
+    filename="\"><img src=x onerror=alert(1)><\""
+    然后发包即可，这里是用双引号跳出a标签
+    然后自己构造一个img标签来弹的
+
+    由于windows下面文件名不能出行尖括号，所以上传文件时总出错，
+    这个实验需要在linux下才能完成
+    </xmp>
+</body>
+</html>

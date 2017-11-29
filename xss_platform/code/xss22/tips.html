@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，这里是一个DOM型XSS
+    从url中获取用户名，然后使用innerHTML把值插入到div中
+
+    直接用给name赋值 <img src=x onerror=alert(1)> 即可
+    </xmp>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，这里直接接收keyword参数，
+    之后使用循环把字符串script替换空，然后再把on替换为o_n
+    这里是循环过滤了小写的script所以我们用大写照样可以绕过
+    替换了小写的on，依然用大写绕过
+    则payload1为："><Script>alert(1)</Script><" 即可XSS
+
+    也可以不使用script标签，用img标签依然能够xss
+    因为有些标签里的on事件里是可以执行js代码的
+    则payload2为："><img src=x ONerror=alert(1)><" 即可XSS
+    img标签在加载时会自动去src查找图片，如果查不到就会触发onerror事件
+    </xmp>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，这里直接用$_POST接收keyword参数，
+    之后把字符串script替换为空，然后输出在input的value值处
+    这里可以用大写的SCriPt来绕过过滤，然后闭合掉双引号和尖括号即可
+    payload为："><ScrIPt>alert(1)</scriPt><" 即可XSS
+    </xmp>
+</body>
+</html>

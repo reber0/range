@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，这里直接接收keyword参数，然后变为小写
+    之后使用了循环过滤了<script>和on，然后输出到input中
+    这里可以使用伪协议来绕过
+    可以使用payload："><a href="javascript:alert(1)">click me</a><"
+    这里href里使用javascript伪协议声明后面的是js代码
+    </xmp>
+</body>
+</html>

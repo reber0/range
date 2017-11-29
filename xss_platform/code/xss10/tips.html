@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，这里直接接收keyword参数，然后变为小写
+    之后使用了两个循环，把字符串script以及<img替换为空
+    这里是循环过滤了小写后的script所以已经不能使用script了
+    而这里又过滤了<img，这意味着img标签也不能用了
+    
+    其实除了img标签外，其他的只要支持on之类事件的标签都能够执行js代码
+    比如a标签，可以使用payload："><a onclick=alert(1)>click me</a><"来绕过，
+    不过这个需要点击一下才能xss，危害没有自动xss效果好
+    </xmp>
+</body>
+</html>

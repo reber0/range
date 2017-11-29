@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title><!-- code by reber <1070018473@qq.com> -->
+</head>
+<body>
+    <xmp>
+<?php
+    ini_set('display_errors', 0);
+    
+    require('../../../mysql.class.php');
+    header("Content-Type:text/html; charset=utf-8");
+
+    $db = new mysql();
+    
+    if (isset($_POST['submit'])) {
+        
+        $name = $_POST['name'];
+        $message = $_POST['message'];
+
+        $arr['content'] = mysql_real_escape_string($message);
+        $arr['name'] = mysql_real_escape_string($name);
+        $arr['useragent'] = mysql_real_escape_string( $_SERVER['HTTP_USER_AGENT'] );
+
+        $num = $db->insert('msg',$arr);
+        if ($num != 1) {
+            echo '<script>alert("留言失败.")</script>';
+            die("<script>location.href='index.php';</script>");
+        } else {
+            die("<script>location.href='index.php';</script>");
+        }
+    } else {
+        $rows = $db->select_more('msg','id,name,content','order by id desc');
+
+        foreach ($rows as $key => $value) {
+            echo 'name: '.$value['name'].'<br />';
+            echo 'content: '.$value['content'].'<br /><br />';
+        }
+    }
+?>
+    </xmp>
+</body>
+</html>
+

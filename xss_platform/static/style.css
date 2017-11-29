@@ -1,0 +1,14 @@
+
+
+.header{height:100px;border-bottom:#EFEFEF 1px solid;text-align: center;}
+
+.main{height:50px;padding-top:20px;margin-bottom:10px;text-align: center;}
+
+.source{padding-top:20px;margin:0 auto;text-align: center;}
+
+
+.reber{padding-top:10px;margin:0px auto;width:60%;}
+.left{float:left;width:40%;padding:15px;}
+.right{float:right;width:50%;padding:15px;}
+
+b{color: red;}

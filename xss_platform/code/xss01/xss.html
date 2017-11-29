@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body><!-- code by reber <1070018473@qq.com> -->
+    <xmp>
+<?php
+    ini_set('display_errors', 0);
+    
+    if (isset($_GET['name'])) {
+        $str = $_GET['name'];
+
+        echo "<h2 class='main'>你好：".$str.'</h2>';
+    } else {
+        echo "<h2 class='main'>Please add parameters name.</h2>";
+    }
+?>
+    </xmp>
+</body>
+</html>
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，这里直接接收keyword参数，然后变为小写
+    之后使用了循环过滤了script，然后过滤了圆括号
+    
+    可以使用"><body onload=alert`1`><"
+    这里使用的是Esc键下面的反向单引号，它的作用和单引号一样
+    </xmp>
+</body>
+</html>

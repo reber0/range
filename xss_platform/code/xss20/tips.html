@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    这个实验是存储型xss
+
+    首先连接数据库，然后判断是否有数据提交
+    如果有的话就进行过滤，然后把name、content和user-agent保存
+
+    留言为<img src=x onerror=alert(1)>即可
+    </xmp>
+</body>
+</html>

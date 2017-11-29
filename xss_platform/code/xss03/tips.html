@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，这里先判断URL中是否有name参数，
+    如果有的话就通过$_GET['name']来接收URL上的参数，然后赋值给$str，
+    之后把$str输出在input的value处，没有进行任何过滤，
+    这里的$str是被单引号引号括起来的，要闭合掉单引号和尖括号
+    所以我们用类似的payload：'><script>alert(1)</script><'即可XSS
+    </xmp>
+</body>
+</html>

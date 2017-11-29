@@ -1,0 +1,12 @@
+2017-08-02 21:18:18 连接数据库成功，且选择数据库成功
+2017-08-02 21:18:18 执行语句：select * from msg  where id='1'; 且执行成功
+2017-08-02 21:18:22 连接数据库成功，且选择数据库成功
+2017-08-02 21:18:22 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1\'' at line 1
+2017-08-02 21:18:34 连接数据库成功，且选择数据库成功
+2017-08-02 21:18:34 执行语句：select * from msg  where id="1"; 且执行成功
+2017-08-02 21:18:37 连接数据库成功，且选择数据库成功
+2017-08-02 21:18:37 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"1\"' at line 1
+2017-08-02 21:18:48 连接数据库成功，且选择数据库成功
+2017-08-02 21:18:48 mysql_query error:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\' at line 1
+2017-09-03 17:41:01 连接数据库成功，且选择数据库成功
+2017-09-03 17:41:01 执行语句：select * from msg  where 1 order by 1 desc 且执行成功

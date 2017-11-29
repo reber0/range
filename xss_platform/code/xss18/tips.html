@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，这里利用$_GET从url中接收参数search和type
+    但是search被显示在页面中了，type则是放在了一个隐藏的表单中
+
+    这就提醒我们，在xss中是需要右键查看源码的，然后在页面中找一下
+    看看是否有数据是放在页面中的
+
+    这里直接为type赋值 "><img src=x onerror=alert(1)><"
+    </xmp>
+</body>
+</html>

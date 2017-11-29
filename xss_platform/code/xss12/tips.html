@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，这里直接接收keyword参数，然后变为小写
+    之后使用了循环过滤了script和<img和<a，然后输出到input中
+    所以script和img和a标签宣布gg
+
+    这里不得不提到另外两个常用的payload：
+    "><body onload=alert(1)><"
+    "><div onclick="alert('xss')">click me<"
+    这两个都可以过，前者是自动加载的，后者则需要点击交互
+    </xmp>
+</body>
+</html>

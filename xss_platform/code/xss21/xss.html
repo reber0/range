@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title><!-- code by reber <1070018473@qq.com> -->
+</head>
+<body>
+    <xmp>
+<?php
+    ini_set('display_errors', 0);
+
+    $db = new mysql();
+    
+    if (isset($_POST['submit'])) {
+        
+        $name = $_POST['name'];
+        $message = $_POST['message'];
+
+        $arr['content'] = htmlspecialchars(addslashes($message));
+        $arr['name'] = htmlspecialchars(addslashes($name));
+        $arr['useragent'] = mysql_real_escape_string( $_SERVER['HTTP_USER_AGENT'] );
+
+        $num = $db->insert('msg',$arr);
+        if ($num != 1) {
+            echo '<script>alert("留言失败.")</script>';
+            die("<script>location.href='index.php';</script>");
+        } else {
+            die("<script>location.href='index.php';</script>");
+        }
+    } else {
+        $rows = $db->select_more('msg','id,name,content','order by id desc');
+
+        foreach ($rows as $key => $value) {
+            echo 'name: '.htmlspecialchars($value['name']).'<br />';
+            echo 'content: '.htmlspecialchars($value['content']).'<br /><br />';
+        }
+    }
+?>
+    </xmp>
+</body>
+</html>
+

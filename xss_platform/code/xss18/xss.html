@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title><!-- code by reber <1070018473@qq.com> -->
+</head>
+<body>
+    <xmp>
+<?php 
+    ini_set("display_errors", 0);
+    $search = $_GET["search"];
+    $type = $_GET["type"];
+
+    echo '
+    <form class="search">
+        <input name=type type=hidden value="'.$type.'">
+    </form>'."\n";
+    echo '<h3 class="main">No results for "<b>'.htmlspecialchars($search).'</b>"</h3>';
+?>
+    </xmp>
+</body>
+</html>
+

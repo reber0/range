@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    根据源码可以看到，这里直接接收keyword参数，然后变为小写
+    之后使用正则来过滤<>之间的内容，这意味着所有的类<>标签都不能用了
+    
+    其实input是有一个比较奇葩的payload的，那就是
+    <input type=image src=x onerror=alert(1)>
+    这个payload会把input当做img标签来用
+    
+    此处用 " type=image src=x onerror=alert(1) " 闭合前后双引号，构造即可
+    </xmp>
+</body>
+</html>

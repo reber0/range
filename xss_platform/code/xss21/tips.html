@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title>
+</head>
+<body>
+    <xmp>
+    这个实验也是存储型xss
+
+    首先连接数据库，然后判断是否有数据提交
+    如果有的话就进行过滤，然后把name、content和user-agent保存
+    不过这里输出时对name和content也进行了过滤
+
+    这个实验主要是后台记录了用户的user-agent
+    然而这个user-agent在输出的时候没有过滤
+    所以可以抓包，改user-agent，从而xss后台
+    </xmp>
+</body>
+</html>

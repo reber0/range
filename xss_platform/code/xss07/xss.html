@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title><!-- code by reber <1070018473@qq.com> -->
+</head>
+<body>
+    <xmp>
+<?php 
+    ini_set("display_errors", 0);
+
+    $str = @$_POST["keyword"];
+    $str=str_replace("script","scr_ipt",$str);
+
+    echo '
+    <form class="main" action="index.php" method="POST">
+    <input name=keyword size=60 value="'.$str.'">
+    <input type=submit name=submit value="Search"/>
+    </form>';
+    echo '<p class="main">No results for "<b>'.htmlspecialchars($str).'</b>"</p>';
+?>
+    </xmp>
+</body>
+</html>
+

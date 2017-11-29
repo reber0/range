@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xss</title><!-- code by reber <1070018473@qq.com> -->
+</head>
+<body>
+    <xmp>
+<?php
+    ini_set('display_errors', 0);
+
+    if (isset($_GET['name'])) {
+        $name = $_GET["name"]; 
+
+        echo "<div class='main'>";
+        echo '<input id="text" type="text" value="'.$name.'" />';
+        echo '<div id="print"></div>';
+        echo "</div>";
+    } else {
+        echo "<h2 class='main'>Please add parameters name.</h2>";
+    }
+?>
+
+<script type="text/javascript"> 
+    var text = document.getElementById("text");
+    var print = document.getElementById("print");
+    print.innerHTML = text.value;
+</script>
+    </xmp>
+</body>
+</html>
+
