@@ -23,7 +23,7 @@
     <a href="xss/xss5.php?id=111111">XSS5(反射型,过滤单双引号)</a><br />
     <a href="xss/xss6.php?id=111111">XSS6(反射型,正则'/<.*>/')</a><br />
     <a href="xss/xss7.php">XSS7(存储型xss)</a><br />
-    <a href="xss/xss8.php">XSS8(DOM型xss)</a><br />
+    <a href="xss/xss8.php?id=111111">XSS8(DOM型xss)</a><br />
     <a href="xss_platform/code/xss01/">XSS挑战</a><br />
     <br />
     <a href="upload/up1/">文件上传(前端js过滤)</a><br />
