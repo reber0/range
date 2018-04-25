@@ -5,16 +5,16 @@
     <title>index</title>
 </head>
 <body>
-    <a href="sqli/sqli1.php">注入1(数字型注入)</a><br />
-    <a href="sqli/sqli2.php">注入2(闭合单引号)</a><br />
-    <a href="sqli/sqli3.php">注入3(闭合双引号)</a><br />
-    <a href="sqli/sqli4.php">注入4(闭合括号)</a><br />
-    <a href="sqli/sqli5.php">注入5(爆错注入)</a><br />
-    <a href="sqli/sqli6.php">注入6(布尔型注入)</a><br />
-    <a href="sqli/sqli7.php">注入7(过滤了'--'和'#')</a><br />
+    <a href="sqli/sqli1.php?id=1">注入1(数字型注入)</a><br />
+    <a href="sqli/sqli2.php?id=1">注入2(闭合单引号)</a><br />
+    <a href="sqli/sqli3.php?id=1">注入3(闭合双引号)</a><br />
+    <a href="sqli/sqli4.php?id=1">注入4(闭合括号)</a><br />
+    <a href="sqli/sqli5.php?id=1">注入5(爆错注入)</a><br />
+    <a href="sqli/sqli6.php?id=1">注入6(布尔型注入)</a><br />
+    <a href="sqli/sqli7.php?id=1">注入7(过滤了'--'和'#')</a><br />
     <a href="sqli/sqli8/index.php">注入8(简单二次注入)</a><br />
-    <a href="sqli/sqli9.php">注入9(宽字节注入)</a><br />
-    <a href="sqli/sqli10.php">注入10(二次urldecode注入)</a><br />
+    <a href="sqli/sqli9.php?id=1">注入9(宽字节注入)</a><br />
+    <a href="sqli/sqli10.php?id=1">注入10(二次urldecode注入)</a><br />
     <br />
     <a href="xss/xss1.php">XSS1(反射型xss)</a><br />
     <a href="xss/xss2.php">XSS2(反射型,正则'/< script>/')</a><br />
