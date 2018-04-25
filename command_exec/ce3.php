@@ -22,7 +22,7 @@
             <table border="0">
                 <tr>
                     <td align="right">ip: </td>
-                    <td><input type="text" name="ipaddr"/></td>
+                    <td><input type="text" name="ipaddr" value="-c 4 wyb0.com"/></td>
                 </tr>
                 <tr>
                     <td colspan="2" align="center">
