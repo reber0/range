@@ -11,7 +11,7 @@
         if (empty($ipaddr)) {
             echo "<script language='javascript'>window.history.back(-1);</script>";
         } else {
-            $result = system("ping \"$ipaddr\"");
+            $result = system("ping -c 4 \"$ipaddr\"");
             echo '<pre>'.$result.'<pre>';
             // print_r($result);
         }
@@ -22,7 +22,7 @@
             <table border="0">
                 <tr>
                     <td align="right">ip: </td>
-                    <td><input type="text" name="ipaddr" value="-c 4 wyb0.com"/></td>
+                    <td><input type="text" name="ipaddr" value="wyb0.com"/></td>
                 </tr>
                 <tr>
                     <td colspan="2" align="center">
