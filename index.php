@@ -16,12 +16,12 @@
     <a href="sqli/sqli9.php?id=1">注入9(宽字节注入)</a><br />
     <a href="sqli/sqli10.php?id=1">注入10(二次urldecode注入)</a><br />
     <br />
-    <a href="xss/xss1.php">XSS1(反射型xss)</a><br />
-    <a href="xss/xss2.php">XSS2(反射型,正则'/< script>/')</a><br />
-    <a href="xss/xss3.php">XSS3(反射型,正则'/< script>/i')</a><br />
-    <a href="xss/xss4.php">XSS4(反射型,正则'/<(.*)s(.*)c(.*)r(.*)i(.*)p(.*)t>/i')</a><br />
-    <a href="xss/xss5.php">XSS5(反射型,过滤单双引号)</a><br />
-    <a href="xss/xss6.php">XSS6(反射型,正则'/<.*>/')</a><br />
+    <a href="xss/xss1.php?id=111111">XSS1(反射型xss)</a><br />
+    <a href="xss/xss2.php?id=111111">XSS2(反射型,正则'/< script>/')</a><br />
+    <a href="xss/xss3.php?id=111111">XSS3(反射型,正则'/< script>/i')</a><br />
+    <a href="xss/xss4.php?id=111111">XSS4(反射型,正则'/<(.*)s(.*)c(.*)r(.*)i(.*)p(.*)t>/i')</a><br />
+    <a href="xss/xss5.php?id=111111">XSS5(反射型,过滤单双引号)</a><br />
+    <a href="xss/xss6.php?id=111111">XSS6(反射型,正则'/<.*>/')</a><br />
     <a href="xss/xss7.php">XSS7(存储型xss)</a><br />
     <a href="xss/xss8.php">XSS8(DOM型xss)</a><br />
     <a href="xss_platform/code/xss01/">XSS挑战</a><br />
