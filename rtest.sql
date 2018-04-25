@@ -41,7 +41,7 @@ CREATE TABLE `msg` (
 LOCK TABLES `msg` WRITE;
 /*!40000 ALTER TABLE `msg` DISABLE KEYS */;
 INSERT INTO `msg` VALUES (1,'xiaoming','hello world.','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:46.0) Gecko/20100101 Firefox/46.0');
-INSERT INTO `msg` VALUES (2,'xiaohong','zksmile is a little bitch.','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:52.0) Gecko/20100101 Firefox/52.0');
+INSERT INTO `msg` VALUES (2,'xiaohong','I have a dog.','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:52.0) Gecko/20100101 Firefox/52.0');
 /*!40000 ALTER TABLE `msg` ENABLE KEYS */;
 UNLOCK TABLES;
 
