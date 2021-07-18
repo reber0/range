@@ -17,8 +17,8 @@ email:1070018473@qq.com
         if ($rows) {
             echo "<center><h2>secevery.</h2></center>";
         } else {
-            // echo mysql_error();
-            print_r(mysql_error());
+            // echo mysqli_error($db->conn);
+            print_r(mysqli_error($db->conn));
         }
     } else {
         echo "please input id";

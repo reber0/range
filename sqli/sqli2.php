@@ -25,7 +25,7 @@ email:1070018473@qq.com
             }
             echo '</table>';
         } else {
-            echo mysql_error();
+            echo mysqli_error($db->conn);
         }
     } else {
         echo "please input id";
