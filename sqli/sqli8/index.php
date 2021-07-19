@@ -11,7 +11,6 @@ email:1070018473@qq.com
     if (isset($_POST['name']) && isset($_POST['pass'])) {
         $name = $_POST['name'];
         $pass = $_POST['pass'];
-        $name=  mysql_escape_string($name);
 
         if (empty($name) or empty($pass)) {
             echo '<script>alert("用户名和密码不能为空.")</script>';
@@ -19,6 +18,7 @@ email:1070018473@qq.com
             exit();
         } else {
             $db = new mysql();
+            $name = mysqli_escape_string($db->conn, $name);
 
             $row = $db->select_one('user','*',"username='$name'");
             $num = $db->affected_num();

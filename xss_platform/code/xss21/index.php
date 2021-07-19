@@ -40,7 +40,7 @@
 
                     $arr['content'] = htmlspecialchars(addslashes($message));
                     $arr['name'] = htmlspecialchars(addslashes($name));
-                    $arr['useragent'] = mysql_real_escape_string( $_SERVER['HTTP_USER_AGENT'] );
+                    $arr['useragent'] = mysqli_real_escape_string($db->conn, $_SERVER['HTTP_USER_AGENT'] );
 
                     $num = $db->insert('msg',$arr);
                     if ($num != 1) {

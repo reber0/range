@@ -9,7 +9,6 @@ email:1070018473@qq.com
     if (isset($_POST['submit'])) {
         $name = $_POST['name'];
         $pass = $_POST['pass'];
-        $name=  mysql_escape_string($name);
 
         if (empty($name) or empty($pass)) {
             echo '<script>alert("用户名和密码不能为空.")</script>';
@@ -17,6 +16,7 @@ email:1070018473@qq.com
             exit();
         } else {
             $db = new mysql();
+            $name =  mysqli_escape_string($db->conn, $name);
 
             $row = $db->select_one('user','*','username='.$name);
             if (!$row['username']){ //用户名不存在，可以注册

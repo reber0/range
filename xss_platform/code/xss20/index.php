@@ -34,9 +34,9 @@
         $name = $_POST['name'];
         $message = $_POST['message'];
 
-        $arr['content'] = mysql_real_escape_string($message);
-        $arr['name'] = mysql_real_escape_string($name);
-        $arr['useragent'] = mysql_real_escape_string( $_SERVER['HTTP_USER_AGENT'] );
+        $arr['content'] = mysqli_real_escape_string($db->conn, $message);
+        $arr['name'] = mysqli_real_escape_string($db->conn, $name);
+        $arr['useragent'] = mysqli_real_escape_string($db->conn,  $_SERVER['HTTP_USER_AGENT'] );
 
         $num = $db->insert('msg',$arr);
         if ($num != 1) {

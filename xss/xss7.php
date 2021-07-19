@@ -13,9 +13,9 @@ email:1070018473@qq.com
         $name = $_POST['name'];
         $message = $_POST['message'];
 
-        $arr['content'] = mysql_real_escape_string( $message );
-        $arr['name'] = mysql_real_escape_string( $name );
-
+        $arr['content'] = mysqli_real_escape_string($db->conn, $message );
+        $arr['name'] = mysqli_real_escape_string($db->conn, $name );
+        $arr['useragent'] = mysqli_real_escape_string($db->conn, $_SERVER['HTTP_USER_AGENT'] );
         $num = $db->insert('msg',$arr);
         if ($num != 1) {
             echo '<script>alert("留言失败.")</script>';

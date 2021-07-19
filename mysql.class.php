@@ -25,33 +25,25 @@ class mysql {
     //连接数据库
     public function connect($dbhost, $dbuser, $dbpass, $dbname, $dbcharset)
     {
-        $this->conn = @mysql_connect($dbhost,$dbuser,$dbpass);
-        if (!$this->conn) {
-            $msg = "连接数据库失败：".mysql_error();
+        $conn = @mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
+        if (!$conn) {
+            $msg = "连接数据库失败：".mysqli_error($conn);
             $this->write_log($msg);
             die($msg);
         } else {
-            if (!@mysql_select_db($dbname)) {
-                $msg = "连接数据库成功，但选择数据库失败：".mysql_error();
-                $this->write_log($msg);
-                die($msg);
-            } else {
-                $msg = "连接数据库成功，且选择数据库成功";
-                $this->write_log($msg);
-            }
+            $msg = "连接数据库成功，且选择数据库成功";
+            $this->write_log($msg);
         }
 
-        @mysql_query("set names ".$dbcharset);
-
+        @mysqli_query($conn, "set names ".$dbcharset);
+        return $conn;
     }
 
     //执行语句
     public function query($sql){
-        
-        $result = @mysql_query($sql);
-
+        $result = @mysqli_query($this->conn, $sql);
         if (!$result) {
-            $this->write_log('mysql_query error:'.mysql_error());
+            $this->write_log('mysql_query error:'.mysqli_error($this->conn));
         } else {
             $this->write_log('执行语句：'.$sql.' 且执行成功');
         }
@@ -69,7 +61,7 @@ class mysql {
             echo '将执行语句：'.$sql.'<br />';
         } else {
             $result = $this->query($sql);
-            $row = @mysql_fetch_assoc($result);
+            $row = @mysqli_fetch_assoc($result);
             return $row;
         }
     }
@@ -86,7 +78,7 @@ class mysql {
             $result = $this->query($sql);
             $i = 0;
             $rows = array();
-            while ($row = @mysql_fetch_assoc($result)) {
+            while ($row = @mysqli_fetch_assoc($result)) {
                 $rows[$i] = $row;
                 // print_r($rows[$i]);
                 $i++; 
@@ -120,7 +112,7 @@ class mysql {
         $value = substr($value, 1);
 
         $sql = "insert into $tab($column) values($value)";
-        // echo $sql.'<br>';
+        //echo $sql.'<br>';exit();
         if ($debug) {
             echo '将执行语句：'.$sql;
         } else {
@@ -133,7 +125,7 @@ class mysql {
 
     //获取最后插入的id
     public function insert_id() {
-        $id = mysql_insert_id($this->link_id);
+        $id = mysqli_insert_id($this->link_id);
         $this->write_log('最后插入的id为：'.$id);
         return $id;
     }
@@ -142,7 +134,7 @@ class mysql {
     public function update($tab,$arr,$condition = '',$debug=False)
     {
         if (!$condition) {
-            die("error".mysql_error());
+            die("error".mysqli_error($this->conn));
         } else {
             $condition = 'where ' . $condition;
         }
@@ -184,7 +176,7 @@ class mysql {
     //返回受影响行数
     public function affected_num()
     {
-        $num = @mysql_affected_rows();
+        $num = mysqli_affected_rows($this->conn);
         return $num;
     }
 
@@ -200,7 +192,7 @@ class mysql {
     //关闭数据库连接
     public function close()
     {  
-        mysql_close($this->conn);
+        mysqli_close($this->conn);
         // mysql_close();
     }
 
