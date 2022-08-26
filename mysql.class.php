@@ -27,7 +27,7 @@ class mysql {
     {
         $conn = @mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
         if (!$conn) {
-            $msg = "连接数据库失败：".mysqli_error($conn);
+            $msg = "连接数据库失败：".mysqli_connect_error();
             $this->write_log($msg);
             die($msg);
         } else {

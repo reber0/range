@@ -1,4 +1,10 @@
 <?php
+/*
+ * @Author: reber
+ * @Mail: reber0ask@qq.com
+ * @Date: 2021-07-30 20:08:44
+ * @LastEditTime: 2022-08-26 09:30:36
+ */
     require('../mysql.class.php');
     header("Content-Type:text/html; charset=utf-8");
 
@@ -11,7 +17,7 @@ email:1070018473@qq.com
         // echo $id;
 
         // $id = "'$id'";
-        $id = '"'.$id.'"';
+        $id = '(("'.$id.'"))';
         $db = new mysql();
         $rows = $db->select_one('msg','*','id='.$id);
 
@@ -24,7 +30,7 @@ email:1070018473@qq.com
             }
             echo '</table>';
         } else {
-            echo mysqli_error($db->conn); 
+            echo mysqli_error($db->conn);
         }
     } else {
         echo "please input id";

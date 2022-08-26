@@ -1,14 +1,20 @@
 <?php
+/*
+ * @Author: reber
+ * @Mail: reber0ask@qq.com
+ * @Date: 2021-07-30 20:08:44
+ * @LastEditTime: 2021-09-01 14:59:52
+ */
 //code by reber <1070018473@qq.com>
     header("Content-Type:text/html; charset=utf-8");
 
-    if (isset($_POST['submit'])) {
+    if (isset($_POST['ipaddr'])) {
         $ipaddr = $_POST['ipaddr'];
 
         if (empty($ipaddr)) {
             echo "<script language='javascript'>window.history.back(-1);</script>";
         } else {
-            $result = shell_exec('ping -c 4 '.$ipaddr);
+            $result = shell_exec('ping -c 4 "'.$ipaddr.'"');
             echo '<pre>'.$result.'<pre>';
             // print_r($result);
         }

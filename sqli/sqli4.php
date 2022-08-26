@@ -1,4 +1,10 @@
 <?php
+/*
+ * @Author: reber
+ * @Mail: reber0ask@qq.com
+ * @Date: 2021-07-30 20:08:44
+ * @LastEditTime: 2022-08-26 09:20:24
+ */
     require('../mysql.class.php');
     header("Content-Type:text/html; charset=utf-8");
 /*

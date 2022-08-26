@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect('localhost','root','root','rtest');
+    $conn = mysqli_connect('mysql5.5','root','root','rtest');
     mysqli_query($conn, "SET NAMES 'gbk'");
 /*
 code by reber
