@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+/*
+ * @Author: reber
+ * @Mail: reber0ask@qq.com
+ * @Date: 2021-07-30 20:08:44
+ * @LastEditTime: 2022-08-26 09:46:11
+ */
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +30,7 @@
     <a href="xss/xss6.php?id=111111">XSS6(反射型,正则'/<.*>/')</a><br />
     <a href="xss/xss7.php">XSS7(存储型xss)</a><br />
     <a href="xss/xss8.php?id=111111">XSS8(DOM型xss)</a><br />
-    <a href="xss_platform/code/xss01/">XSS挑战</a><br />
+    <a href="xss_platform/code/xss01/index.php">XSS挑战</a><br />
     <br />
     <a href="upload/up1/">文件上传(前端js过滤)</a><br />
     <a href="upload/up2/">文件上传(黑名单过滤后缀名)</a><br />
@@ -42,20 +48,20 @@
     <a href="code_exec/assert.php">代码执行(assert的使用)</a><br />
     <a href="code_exec/preg_replace.php">代码执行(preg_replace的/e)</a><br />
     <br />
-    <a href="fi/fi1/">文件包含</a><br />
-    <a href="fi/fi2/">文件包含(使用%00)</a><br />
+    <a href="fi/fi1/index.php">文件包含</a><br />
+    <a href="fi/fi2/index.php">文件包含(使用%00)</a><br />
     <br />
-    <a href="csrf/csrf1/">CSRF(可删除留言)</a><br />
-    <a href="csrf/csrf2/">CSRF(可重置密码)</a><br />
+    <a href="csrf/csrf1/index.php">CSRF(可删除留言)</a><br />
+    <a href="csrf/csrf2/index.php">CSRF(可重置密码)</a><br />
     <br />
     <a href="ssrf/ssrf1.php">ssrf1</a><br />
     <a href="ssrf/ssrf2.php">ssrf2</a><br />
     <a href="ssrf/ssrf3.php">ssrf3</a><br />
     <br />
-    <a href="ultra_vires/">越权(更改cookie)</a><br />
+    <a href="ultra_vires/index.php">越权(更改cookie)</a><br />
     <br />
-    <a href="blast/code/">爆破(4位数字验证码)</a><br />
-    <a href="blast/form/">爆破(表单)</a><br />
+    <a href="blast/code/index.php">爆破(4位数字验证码)</a><br />
+    <a href="blast/form/index.php">爆破(表单)</a><br />
     <br />
     <a href="file/read.php?file=test.txt">任意文件读取</a><br />
     <a href="file/down.php">任意文件下载</a><br />
