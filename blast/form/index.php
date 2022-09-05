@@ -1,4 +1,10 @@
 <?php
+/*
+ * @Author: reber
+ * @Mail: reber0ask@qq.com
+ * @Date: 2021-07-30 20:08:44
+ * @LastEditTime: 2022-09-05 10:35:16
+ */
     //code by reber <1070018473@qq.com>
     header("Content-Type:text/html; charset=utf-8");
 
@@ -7,17 +13,16 @@
         $pass = $_POST['pass'];
 
         if (empty($name) or empty($pass)) {
-            echo '<script>alert("用户名和密码不能为空.")</script>';
-            echo "<script language='javascript'>window.history.back(-1);</script>";
+            echo '<script>alert("用户名和密码不能为空.");window.history.back(-1);</script>';
             exit();
         } else {
-            if ($name!=='test123'){
-                echo 'username is error.';
+            if ($name !== 'test'){
+                echo "<script>alert('username is error');window.history.back(-1);</script>";
             } else {
-                if ($pass ==  '123456') {
+                if ($pass == '123456') {
                     echo 'your are right.';
                 } else {
-                    echo 'password is error.';
+                    echo "<script>alert('password is error');window.history.back(-1);</script>";
                 }
             }
         }
